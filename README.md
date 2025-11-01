@@ -1,19 +1,43 @@
 
-# Sanal Öğretmen Platformu
+# Virtual Teacher Platform
 
-Sıradan bir üniversite günü düşünelim. Günümüzde üniversite eğitiminde her sene öğretim elemanları aynı konuları tekrar tekrar anlatmak zorunda kalmakta, öğrenciler ise sınav dönemleri online platformlardan konuları öğrenirim düşüncesiyle, teorik derslere isteksiz bir şekilde gelme eğiliminde olabilmektedir.
+Imagine an ordinary university day. In today’s higher education system, lecturers often have to repeat the same theoretical content every semester, while students—expecting to learn from online resources during exam periods—tend to skip theoretical lectures and attend only practical sessions.
 
-Verimsizliğe neden olan bu tarz sorunlarının çözülmesi için öğrencilere ilgili ders hakkındaki teorik bilgiyi belli bir internet platformundan ders öncesi çalışmaları amacıyla sunabiliriz.
+To address this inefficiency, the Virtual Teacher Platform aims to provide students with theoretical course materials through an online system before class sessions, allowing them to study in advance.
 
-Bu sayede öğrenciler derslere konuları önceden çalışmış olacak katılacaklardır ve uygulamalı dersler, ders içi çalışmalar, öğretim elemanlarının monoton teorik ders anlatım süreçlerinden kurtulmaları, öğretim elemanlarının araştırma için daha fazla vakte sahip olmaları ve öğrencilerine yeni bakış açıları kazandırmaya odaklanmaları gibi farklı ve yenilikçi aktivitelere zaman kalmış olacaktır.
+This approach enables students to come to class prepared, making more time for:
 
-Aslında bu tarz eğitim modeline tersyüz eğitim modeli denilmektedir ve dünya üzerinde örnekleri mevcuttur. 
+Practical exercises and in-class discussions
 
-Fakat, Sanal Öğretmen Platformumuz ders öncesi teorik bilginin öğrencilere sunulması aşamasında Gemini büyük dil modelinin (LLM) imkanlarından yararlanmaktadır. 
+Reducing the monotony of theoretical teaching for instructors
 
-Videolu ders materyalleri Gemini tarafından özetlenebilmekte, ilgili ders materyali hakkında Gemini örnek sorular üretebilmekte, öğrenci takıldığı kısımları platform üzerinden Geminiye sorabilmekte ve ilgili ders materyaline benzer makaleler internet üzerinden aranıp öğrenciye sunulabilmektedir.
+Allowing instructors to focus on research and student engagement
 
-Bu sayede, öğretim elemanları ders videoları, pdf, slaytlar, makaleleri gibi ders materyallerini hazırlayıp bu platforma yükleyebileceği için teorik ders anlatma yükünden kurtulacaklardır. Öğrenciler LLM yardımıyla bu ders materyallerine ders öncesinde kapsamlı bir şekilde çalışabileceklerdir.
+Encouraging innovative and interactive learning experiences
+
+This model aligns with the flipped classroom methodology, which already has successful examples worldwide.
+
+However, our Virtual Teacher Platform takes it a step further by integrating Gemini Large Language Model (LLM) capabilities into the process of delivering theoretical content.
+
+🧠 How It Works
+
+Gemini assists both instructors and students throughout the learning process:
+
+🎥 Summarizes uploaded lecture videos and materials
+
+❓ Generates example questions related to each lesson
+
+💬 Answers student queries about confusing concepts in real time
+
+🌐 Finds related research papers and materials across the web
+
+As a result:
+
+Instructors can upload lecture videos, PDFs, slides, and papers directly to the platform
+
+Theoretical teaching workload is reduced
+
+Students can study materials in-depth before class using LLM-assisted summaries and Q&A
 
 <img width="1885" height="878" alt="Sanal Öğretmen Platformu_1" src="https://github.com/user-attachments/assets/854d760f-0d5a-4122-bf5b-7adc8dde2602" />
 
@@ -25,20 +49,20 @@ Bu sayede, öğretim elemanları ders videoları, pdf, slaytlar, makaleleri gibi
 
 <img width="1861" height="874" alt="Sanal Öğretmen Platformu_2" src="https://github.com/user-attachments/assets/f01bf82a-bc8d-4cca-aebc-7bdf3025a62f" />
 
-## Planlanan İyileştirmeler ve Yenilikler
+## 🚀 Planned Improvements and Future Enhancements
 
-- Materyal yükleme ekranı
+📂 Material Upload Page
 
-- Materyal yükleme esnasında Whisper ile otomatik transkript çıkarımı
+🗣️ Automatic Transcription using Whisper during upload
 
-- Yüklenen materyaller için depolama sistemi
+💾 Storage system for uploaded materials
 
-- Kullanıcı oturumları, login ekranı
+🔐 User authentication (login system)
 
 ###
 
 
-## Kullanılan Teknolojiler
+## 🧩 Technologies Used
 
 **Frontend:** Next.js, TailwindCSS
 
@@ -47,69 +71,54 @@ Bu sayede, öğretim elemanları ders videoları, pdf, slaytlar, makaleleri gibi
 **External APIs:** Gemini API, Google Custom Search API
 
 
-## Çalıştırma Adımları
+## ⚙️ Setup and Installation
 
-Projenin lokal makinede çalıştırılabilmesi için gerekli olan API anahtarları bu sitelerden elde edilebilir: <br>
+To run the project locally, obtain the required API keys from the following services: <br>
 🔶 https://console.cloud.google.com/marketplace/product/google/customsearch.googleapis.com?inv=1&invt=Ab4yOA&project=gen-lang-client-0393105183 
 <br>
 🔶 https://programmablesearchengine.google.com/controlpanel/all 
 <br>
 🔶 https://aistudio.google.com/app/apikey <br>
 
-Projeyi lokal makinenize klonlayın
+1. Clone the Repository
 
 ```bash
   git clone https://github.com/sherechogaki/MerkutX.git
 ```
-Frontend dizinine gidin
 
+2. Frontend Setup
+   
 ```bash
   cd MerkutX\frontend
-```
-
-Frontend için gerekli bağımlılıkları kurun
-
-```bash
   npm install
-```
-
-Frontend sunucusunu başlatın
-
-```bash
   npm run start
 ```
 
-Backend dizinine gidin
+3. Backend Setup
 
 ```bash
-  cd MerkutX\backend
-```
-
-Python virtual environment'i oluşturun ve aktive edin
-
-```bash
+  cd MerkutX/backend
   python -m venv venv
   .\venv\Scripts\activate
-```
-
-Gerekli bağımlılıkları kurun
-
-```bash
   pip install -r requirements.txt
 ```
 
-Environment dosyasını oluşturun
+4. Configure Environment
 
 ```bash
   copy env.example .env
 ```
 
-.env dosyasının içeriğini kendi API anahtarlarınız ile doldurun (Gemini API, Google Custom Search API)
+fill the .env with your API keys (Gemini API, Google Custom Search API)
 
-Backend sunucusunu başlatın
-
+5. Run the Backend
+   
 ```bash
   uvicorn main:app --reload
 ```
 
-Tarayıcınızda http://localhost:3000/ adresine gidin
+6. Access the Platform
+
+```bash
+  Visit http://localhost:3000/ in your browser.
+```
