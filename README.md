@@ -3,6 +3,13 @@
 
 Imagine an ordinary university day. In today’s higher education system, lecturers often have to repeat the same theoretical content every semester, while students—expecting to learn from online resources during exam periods—tend to skip theoretical lectures and attend only practical sessions.
 
+<p align="center">
+  🧠 <b>To learn more about this project</b><br>
+  <a href="https://ydogu159.medium.com/revolutionizing-education-a-way-of-putting-a-teachers-brain-into-a-computer-db479d4cccfe" target="_blank">
+    Read my Medium article
+  </a>
+</p>
+
 To address this inefficiency, the Virtual Teacher Platform aims to provide students with theoretical course materials through an online system before class sessions, allowing them to study in advance.
 
 This approach enables students to come to class prepared, making more time for:
