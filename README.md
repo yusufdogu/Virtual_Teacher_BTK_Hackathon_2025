@@ -3,7 +3,6 @@
 
 Imagine an ordinary university day. In today’s higher education system, lecturers often have to repeat the same theoretical content every semester, while students—expecting to learn from online resources during exam periods—tend to skip theoretical lectures and attend only practical sessions.
 
-## 🧠 Learn More
 
 To dive deeper into the concept and inspiration behind this project, check out my detailed Medium article:  
 👉 [Revolutionizing Education — A Way of Putting a Teacher’s Brain into a Computer](https://ydogu159.medium.com/revolutionizing-education-a-way-of-putting-a-teachers-brain-into-a-computer-db479d4cccfe)
