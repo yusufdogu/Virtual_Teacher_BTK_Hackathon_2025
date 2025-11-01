@@ -8,6 +8,7 @@ To dive deeper into the concept and inspiration behind this project, check out m
 👉 [Revolutionizing Education — A Way of Putting a Teacher’s Brain into a Computer](https://ydogu159.medium.com/revolutionizing-education-a-way-of-putting-a-teachers-brain-into-a-computer-db479d4cccfe)
 
 
+
 To address this inefficiency, the Virtual Teacher Platform aims to provide students with theoretical course materials through an online system before class sessions, allowing them to study in advance.
 
 This approach enables students to come to class prepared, making more time for:
